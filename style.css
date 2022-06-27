@@ -1,0 +1,646 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	box-shadow: border;
+	
+}
+
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(home-bg-3.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.icons{
+	text-align: right;
+	color: #fff;
+	word-spacing: 20px;
+	cursor: pointer;
+	font-size: 20px;
+	padding-bottom: 20px;
+
+}
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlinks{
+	flex: 1;
+	text-align: right;
+}
+
+.navlinks ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+	background-color: transparent;
+
+}
+.navlinks ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 17px;
+    padding: 25px;
+                   
+}
+.navlinks ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background-color: #f44336;
+	display: block;
+	margin: auto ; 
+	transition: 0.5s;
+    
+}
+.navlinks ul li:hover::after{
+	width: 50%;
+    
+	
+}
+.textbox{
+	color: #fff;
+	font-size: 35px;
+
+
+}	
+.textbox p{
+	padding-top: 150px;
+	padding-left: 650px;
+	
+}
+
+.middlebutton {
+	
+	display: inline-block;
+	background: transparent;
+	color: #fff;
+	position: relative;
+	cursor: pointer;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 16px;
+	text-decoration: none;
+
+}
+.middlebutton:hover{
+	border: 1px solid #95ff00;
+	color: rgb(255, 255, 255);
+	background: #555555;
+	transition: 1s;
+}	
+
+/*-----Trip----*/
+
+.Trip{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.Trip p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.Tripcol{
+	flex-basis: 31%;
+	background: #ffebcd;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.Tripcol:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*-----------cities----------*/
+
+.cities{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.cities p{
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.citiescol{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	height: 650px;
+	width: 100%;
+	display: block;
+
+
+}
+.citiescol:hover{
+	background: #e3dac9;
+	height: auto;
+
+
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom: 50%;
+	opacity: 1;
+}
+
+
+/*------------------------------------------escape-------------------------------------*/
+
+.escape h1{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d6d6d6;
+}
+.escape p{
+	padding-left: 250px;
+	padding-bottom: 200px;
+	padding-top: 125px;
+}
+.escape img{
+	padding-top: 20px;
+	padding-right: 50px;
+}
+
+/*--------------------------------------packagess -----------------------*/
+.packages{
+	background-color: white;
+}
+.packages .box-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+	gap: 1rem;
+}
+.packages .box-container .box{
+	border: var(--border);
+	box-shadow: var(--box--shadow);
+	background: white;
+	border-style: groove;
+	border-color: orange;
+}
+
+.packages .box-container .box  .image{
+	height: 15rem;
+	overflow: hidden;
+}
+
+.packages .box-container .box .image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: .2s linear;
+    	
+}
+
+.packages .box-container .box .content{
+	padding: 2rem;
+	text-align: center;
+}
+.packages .box-container .box .content h3{
+	font-size: 2.5rem;
+	color: var(--black);
+}
+.packages .box-container .box .content a{
+	background:#ffa500;
+	color: #fff;
+}
+.packages .load-more{
+	padding-left: 700px;
+	padding-top: 50px;
+}
+.packages .load-more a{
+	background:#ffa500;
+	text-align: center;
+	
+}
+
+    
+
+
+
+
+/*--------------------------------------category(adventure idea!)--------*/
+
+.category .box-container{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.category .box{
+	text-align: center;
+	padding: 2rem;
+}
+.category h3{
+	font-size: 25px;
+	color: #ffd700;
+}
+.category p{
+	font-size: 15px;
+}
+
+.category img{
+	height: 18rem;
+	width: 19rem;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+ 
+.category .btn{
+	background:#ffa500;
+	color: #fff;
+}
+
+
+
+
+/*------------------------------------video--------------------------------*/
+.video_container{
+	padding-bottom: 1rem;
+	padding-top: 30px;
+}
+.video_container p{
+	padding-bottom: 50px;
+}
+
+.video_description{
+	text-align: center;
+	margin-bottom: var(--mb-2-5);
+}
+
+.banner{
+	position: relative;
+	padding-left: 275px; 
+}
+
+/*---------------------------services section------------------*/
+
+.services .heading{
+	padding-bottom: 30px;
+}
+
+.services .box-container{
+	display: flex;
+	flex-wrap:  wrap;
+	gap: 1.5rem;
+}
+
+.services .box-container .box{
+	flex: 1 1 30rem;
+	border-radius: .5rem;
+	padding: 1rem;
+	text-align: center;
+
+}
+
+.services .box-container .box i{
+	padding: 1rem;
+	font-size: 5rem;
+	color: #ffa500;
+}
+.services .box-container .box h3{
+	font-size: 2rem;
+	color: #333;
+}
+.services .box-container .box p{
+	font-size: 1.5rem;
+	color: #666;
+	padding: 1rem 0;
+}
+.services .box-container .box:hover{
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+
+
+
+
+
+/*---------------Book section--------------------------------------*/
+.heading{
+	text-align: center;
+	padding: 2.5rem 0;
+	padding-top: 100px;
+}
+.heading span{
+	font-size: 3.5rem;
+	background: rgba(255, 165, 0, .2);
+	color: #ffa500;
+	border-radius: .5rem;
+	padding: .2rem 1rem;
+
+}
+/*.heading span space{
+	background: none;
+	text-decoration: none;
+}*/
+.book .row3 form .inputbox h3{
+	font-size: 1.5rem;
+	color: #666;
+	padding: 1rem 0;
+	text-align: left;
+}
+.book .row3{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.book .row3 .image{
+	flex: 1 1 40rem;
+}
+
+.book .row3 .image img{
+	 width: 100%;
+	 padding-top: 75px;
+}
+.book .row3 form{
+	flex: 1 1 40rem;
+	padding: 2rem;
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+	border-radius: .5rem;
+}
+
+.book .row3 form .inputbox{
+	padding: .5rem 0;
+	font-size: 10px;
+
+}
+.book .row3 form .inputbox input{
+	width: 100%;
+	padding: 1rem;
+	border: 1rem solid rgba(0,0,0,.1);
+	font-size: 1rem;
+	color: #333;
+	text-transform: none;
+
+}
+.btn2{
+	background:#ffa500;
+	color:#fff ;
+	border: none;
+	width: 25%;
+	height: 50px;
+}
+
+/*--------------------------ReView section------------*/
+.wrapper{
+	background: linear-gradient(90deg,#880fc4 0%,#1d39f2 100%);
+	min-height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	text-align: center;
+
+}
+
+.wrapper h2 {
+	font-size: 60px;
+	font-weight: 500;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 100px;
+}
+
+.cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1200px;
+	margin: 0 auto;
+    
+
+}
+
+.card {
+	width: 350px;
+	height: 250px; 
+	color: #fff;
+	margin: 5px;
+	padding: 20px 30px;
+	position: relative;
+	box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+
+}
+.card img{
+	height: 90px;
+	width: 90px;
+	border: 2px solid #f2f2f2;
+	border-radius: 50%;
+	position: absolute;
+	top: -40px;
+	left: 20px;
+}
+.card p{
+	font-size: 16px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+.card  h3 {
+	font-weight: 500;
+	margin-bottom: 4px;
+	color: #ffa500;
+	font-size: 25px;
+
+}
+.card i{
+	font-size: 60px;
+	position: absolute;
+	bottom: 20px;
+	right: 25px;
+	color: #b2bec3;
+}
+.card:hover{
+	transform: scale(1.4);
+	color: #333;
+	background: #fff;
+    z-index: 10000;
+}
+
+
+
+/*------------contact us----------------*/
+.heading{
+	text-align: center;
+	padding: 2.5rem 0;
+	padding-top: 100px;
+}
+.heading span{
+	font-size: 3.5rem;
+	background: rgba(255, 165, 0, .2);
+	color: #ffa500;
+	border-radius: .5rem;
+	padding: .2rem 1rem;
+
+}
+/*.heading span space{
+	background: none;
+	text-decoration: none;
+}*/
+.contact.row3 form .inputbox h3{
+	font-size: 1.5rem;
+	color: #666;
+	padding: 1rem 0;
+	text-align: left;
+}
+.contact h3{
+	text-align: left;
+}
+.contact .row3{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.contact .row3 .image{
+	flex: 1 1 40rem;
+}
+
+.contact .row3 .image img{
+	 width: 100%;
+	 padding-top: 75px;
+}
+.contact .row3 form{
+	flex: 1 1 40rem;
+	padding: 2rem;
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+	border-radius: .5rem;
+}
+
+.contact .row3 form .inputbox{
+	padding: .5rem 0;
+	font-size: 10px;
+
+}
+.contact .row3 form .inputbox input{
+	width: 100%;
+	padding: 1rem;
+	border: 1rem solid rgba(0,0,0,.1);
+	font-size: 1rem;
+	color: #333;
+	text-transform: none;
+
+}
+.btn2{
+	background:#ffa500;
+	color:#fff ;
+	border: none;
+	width: 25%;
+	height: 50px;
+}
+
+/*------------------------footer section------------------*/
+
+.footer{
+	background: #333;
+}
+
+.footer .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+.footer .box-container .box{
+	padding: 1rem 0;
+	flex: 1 1 20rem;
+}
+
+.footer .box-container .box h3{
+	font-size: 1.5rem;
+	padding: .7rem 0;
+	color: #fff;
+}
+
+.footer .box-container .box p{
+	font-size: 1rem;
+	padding: .7rem 0;
+	color: #eee;
+}
+.footer .box-container .box a{
+	display: block;
+	font-size: 1rem;
+	padding: .4rem 0;
+	color: #eee;
+	text-decoration: none;
+	padding-left: 150px;
+}
+.footer .box-container .box a:hover{
+	color: #ffa500;
+	text-decoration: underline;
+
+}
+.footer .credit{
+	text-align: center;
+	padding: 2rem 1rem;
+	margin-top: 1rem;
+	font-size: 2rem;
+	font-weight: normal;
+	color: #fff;
+	border-top: .1rem solid rgba( 255, 255, 255, 0.2);
+}
+.footer .credit span{
+	color:#ffa500 ;
+}
